@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="CoreTech — Module Grid">
+  <rect width="48" height="48" rx="12" fill="#0B1626"/>
+  <g fill="#FFFFFF">
+    <rect x="8" y="8" width="9" height="9" rx="2.2"/>
+    <rect x="19.5" y="8" width="9" height="9" rx="2.2"/>
+    <rect x="8" y="19.5" width="9" height="9" rx="2.2"/>
+    <rect x="8" y="31" width="9" height="9" rx="2.2"/>
+    <rect x="19.5" y="31" width="9" height="9" rx="2.2"/>
+    <rect x="31" y="31" width="9" height="9" rx="2.2"/>
+  </g>
+  <rect x="31" y="8" width="9" height="9" rx="2.2" fill="#E8A13A"/>
+  <rect x="19.5" y="19.5" width="9" height="9" rx="2.2" fill="#14B39C"/>
+</svg>

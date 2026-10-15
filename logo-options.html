@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CoreTech Logo Options</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .opts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .opt { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; }
+    .opt-tiles { display: grid; grid-template-columns: 1fr 1fr; }
+    .tile { display: flex; align-items: center; justify-content: center; gap: 14px; padding: 44px 16px; min-height: 150px; }
+    .tile--dark { background: var(--navy); }
+    .tile img { width: 52px; height: 52px; flex: none; }
+    .tile--dark img.invertable { outline: 1px solid rgba(255,255,255,.12); border-radius: 13px; }
+    .opt-body { padding: 22px 26px 26px; border-top: 1px solid var(--line); }
+    .opt-body header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+    .opt-body h2 { font-size: 19px; }
+    .opt-body header span { font-family: var(--font-display); color: var(--muted); }
+    .opt-body p { color: var(--muted); font-size: 15px; }
+    .sizes { display: flex; align-items: flex-end; gap: 14px; margin-top: 16px; }
+    .sizes img { display: block; }
+    .sizes small { font-size: 12px; color: var(--muted); font-weight: 600; margin-left: 4px; }
+    .current { display: inline-block; margin-left: 8px; padding: 3px 9px; border-radius: 999px; background: var(--brand-soft); color: var(--brand); font-size: 11.5px; font-weight: 800; letter-spacing: .04em; vertical-align: middle; }
+
+    /* Wordmark styles */
+    .wm { line-height: 1; white-space: nowrap; color: var(--ink); }
+    .tile--dark .wm { color: #fff; }
+    .wm b { color: var(--brand); font-weight: inherit; }
+    .tile--dark .wm b { color: var(--brand-2); }
+    .wm--sans { font-weight: 800; font-size: 28px; letter-spacing: -0.03em; }
+    .wm--light { font-weight: 400; font-size: 28px; letter-spacing: -0.02em; }
+    .wm--light b { font-weight: 800; color: var(--ink); }
+    .tile--dark .wm--light b { color: #fff; }
+    .wm--caps { font-weight: 800; font-size: 20px; letter-spacing: .22em; }
+    .wm--serif { font-family: var(--font-display); font-weight: 500; font-size: 31px; letter-spacing: -0.02em; }
+    .wm--serif b { font-style: italic; }
+    .wm--lower { font-weight: 700; font-size: 29px; letter-spacing: -0.04em; }
+    .wm--lower i { font-style: normal; color: var(--accent); }
+
+    @media (max-width: 960px) { .opts { grid-template-columns: 1fr; } }
+    @media (max-width: 520px) {
+      .opt-tiles { grid-template-columns: 1fr; }
+      .tile { padding: 32px 16px; min-height: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Brand exploration</span>
+        <h1 class="display">CoreTech logo <em>options.</em></h1>
+        <p class="lead">Seven marks, including your hexagon concept, each shown on light and dark backgrounds with a suggested wordmark style and small sizes. The icons share the site palette, so you can switch to any of them without other design changes.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container opts">
+
+        <article class="opt">
+          <div class="opt-tiles">
+            <div class="tile"><img src="assets/img/logo-options/07-hex-growth.svg" alt=""><span class="wm wm--sans">Core<b>Tech</b></span></div>
+            <div class="tile tile--dark"><img src="assets/img/logo-options/07-hex-growth.svg" alt=""><span class="wm wm--sans">Core<b>Tech</b></span></div>
+          </div>
+          <div class="opt-body">
+            <header><h2>Hex Growth <span class="current">YOUR CONCEPT</span></h2><span>07</span></header>
+            <p>Your hexagonal "C" redrawn as a clean vector. The facets brighten toward the upper right, and the lower arm turns upward in a small amber wedge, so growth is suggested without an explicit arrow.</p>
+            <div class="sizes"><img src="assets/img/logo-options/07-hex-growth.svg" width="32" height="32" alt=""><img src="assets/img/logo-options/07-hex-growth.svg" width="20" height="20" alt=""><img src="assets/img/logo-options/07-hex-growth.svg" width="16" height="16" alt=""><small>32 · 20 · 16 px</small></div>
+          </div>
+        </article>
+
+        <article class="opt">
+          <div class="opt-tiles">
+            <div class="tile" style="padding:20px"><img src="assets/img/image.png" alt="Original hexagon C concept" style="width:auto;height:110px"></div>
+            <div class="tile tile--dark" style="padding:20px"><img src="assets/img/image.png" alt="" style="width:auto;height:110px"></div>
+          </div>
+          <div class="opt-body">
+            <header><h2>Original sketch</h2><span>Ref</span></header>
+            <p>Your original artwork, for side-by-side comparison. Note how the raster background shows up as a pale box on dark backgrounds.</p>
+          </div>
+        </article>
+
+        <article class="opt">
+          <div class="opt-tiles">
+            <div class="tile"><img src="assets/img/logo-options/01-core-ring.svg" alt=""><span class="wm wm--sans">Core<b>Tech</b></span></div>
+            <div class="tile tile--dark"><img class="invertable" src="assets/img/logo-options/01-core-ring.svg" alt=""><span class="wm wm--sans">Core<b>Tech</b></span></div>
+          </div>
+          <div class="opt-body">
+            <header><h2>Core Ring <span class="current">CURRENT</span></h2><span>01</span></header>
+            <p>An open "C" around a teal diamond core. The amber dot at the opening suggests connection. Simple, confident and very readable at small sizes.</p>
+            <div class="sizes"><img src="assets/img/logo-options/01-core-ring.svg" width="32" height="32" alt=""><img src="assets/img/logo-options/01-core-ring.svg" width="20" height="20" alt=""><img src="assets/img/logo-options/01-core-ring.svg" width="16" height="16" alt=""><small>32 · 20 · 16 px</small></div>
+          </div>
+        </article>
+
+        <article class="opt">
+          <div class="opt-tiles">
+            <div class="tile"><img src="assets/img/logo-options/02-hex-core.svg" alt=""><span class="wm wm--light">Core<b>Tech</b></span></div>
+            <div class="tile tile--dark"><img class="invertable" src="assets/img/logo-options/02-hex-core.svg" alt=""><span class="wm wm--light">Core<b>Tech</b></span></div>
+          </div>
+          <div class="opt-body">
+            <header><h2>Hex Core</h2><span>02</span></header>
+            <p>A hexagon left open on one side to form a "C", with a solid hexagon at its centre. It reads as engineered and structured, a good fit for a systems firm.</p>
+            <div class="sizes"><img src="assets/img/logo-options/02-hex-core.svg" width="32" height="32" alt=""><img src="assets/img/logo-options/02-hex-core.svg" width="20" height="20" alt=""><img src="assets/img/logo-options/02-hex-core.svg" width="16" height="16" alt=""><small>32 · 20 · 16 px</small></div>
+          </div>
+        </article>
+
+        <article class="opt">
+          <div class="opt-tiles">
+            <div class="tile"><img src="assets/img/logo-options/03-module-grid.svg" alt=""><span class="wm wm--caps">CORE<b>TECH</b></span></div>
+            <div class="tile tile--dark"><img class="invertable" src="assets/img/logo-options/03-module-grid.svg" alt=""><span class="wm wm--caps">CORE<b>TECH</b></span></div>
+          </div>
+          <div class="opt-body">
+            <header><h2>Module Grid</h2><span>03</span></header>
+            <p>Eight blocks that spell a "C", with the centre block highlighted as the core. It hints at modules fitting together into one system, and feels modern and geometric.</p>
+            <div class="sizes"><img src="assets/img/logo-options/03-module-grid.svg" width="32" height="32" alt=""><img src="assets/img/logo-options/03-module-grid.svg" width="20" height="20" alt=""><img src="assets/img/logo-options/03-module-grid.svg" width="16" height="16" alt=""><small>32 · 20 · 16 px</small></div>
+          </div>
+        </article>
+
+        <article class="opt">
+          <div class="opt-tiles">
+            <div class="tile"><img src="assets/img/logo-options/04-ct-monogram.svg" alt=""><span class="wm wm--serif">Core<b>Tech</b></span></div>
+            <div class="tile tile--dark"><img class="invertable" src="assets/img/logo-options/04-ct-monogram.svg" alt=""><span class="wm wm--serif">Core<b>Tech</b></span></div>
+          </div>
+          <div class="opt-body">
+            <header><h2>CT Monogram</h2><span>04</span></header>
+            <p>A "C" and "T" interlocked into one monogram, paired with a serif wordmark. It feels more established and advisory, like a consultancy brand.</p>
+            <div class="sizes"><img src="assets/img/logo-options/04-ct-monogram.svg" width="32" height="32" alt=""><img src="assets/img/logo-options/04-ct-monogram.svg" width="20" height="20" alt=""><img src="assets/img/logo-options/04-ct-monogram.svg" width="16" height="16" alt=""><small>32 · 20 · 16 px</small></div>
+          </div>
+        </article>
+
+        <article class="opt">
+          <div class="opt-tiles">
+            <div class="tile"><img src="assets/img/logo-options/05-orbit.svg" alt=""><span class="wm wm--lower">coretech<i>.</i></span></div>
+            <div class="tile tile--dark"><img src="assets/img/logo-options/05-orbit.svg" alt="" style="outline:1px solid rgba(255,255,255,.12);border-radius:50%"><span class="wm wm--lower">coretech<i>.</i></span></div>
+          </div>
+          <div class="opt-body">
+            <header><h2>Orbit</h2><span>05</span></header>
+            <p>A teal core with an orbiting ring and an amber satellite, paired with a lowercase wordmark. It's the friendliest, most tech-forward option.</p>
+            <div class="sizes"><img src="assets/img/logo-options/05-orbit.svg" width="32" height="32" alt=""><img src="assets/img/logo-options/05-orbit.svg" width="20" height="20" alt=""><img src="assets/img/logo-options/05-orbit.svg" width="16" height="16" alt=""><small>32 · 20 · 16 px</small></div>
+          </div>
+        </article>
+
+        <article class="opt">
+          <div class="opt-tiles">
+            <div class="tile"><img src="assets/img/logo-options/06-layers.svg" alt=""><span class="wm wm--sans">Core<b>Tech</b></span></div>
+            <div class="tile tile--dark"><img class="invertable" src="assets/img/logo-options/06-layers.svg" alt=""><span class="wm wm--sans">Core<b>Tech</b></span></div>
+          </div>
+          <div class="opt-body">
+            <header><h2>Layers</h2><span>06</span></header>
+            <p>A stack of three layers, like a business built on a solid base. It's the most literal "foundation" idea and easy to understand at a glance.</p>
+            <div class="sizes"><img src="assets/img/logo-options/06-layers.svg" width="32" height="32" alt=""><img src="assets/img/logo-options/06-layers.svg" width="20" height="20" alt=""><img src="assets/img/logo-options/06-layers.svg" width="16" height="16" alt=""><small>32 · 20 · 16 px</small></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ERP Readiness Check | CoreTech</title>
+  <meta name="description" content="Answer six quick questions and get an instant ERP readiness score with tailored recommendations from CoreTech.">
+  <meta name="theme-color" content="#061A2E">
+  <script>try{var t=localStorage.getItem("ct-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="icon" href="assets/img/logo-mark-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/logo-mark-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="CoreTech home"><img class="brand-mark" src="assets/img/logo-mark-192.png" width="44" height="44" alt=""><span class="brand-name">Core<span>Tech</span></span></a>
+      <div class="nav-menu" id="nav-menu">
+        <nav class="nav-links" aria-label="Primary">
+          <a href="services.html">Services</a>
+          <a href="case-studies.html">Case Studies</a>
+          <a href="readiness.html" aria-current="page">Readiness Check</a>
+          <a href="insights.html">Insights</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <a class="btn btn--primary btn--sm" href="contact.html">Book a consultation</a>
+      </div>
+      <div class="nav-tools">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode"><span class="i-moon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></span><span class="i-sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span></button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero hex-bg">
+      <img class="page-hero-mark" src="assets/img/logo-mark.png" alt="">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Readiness Check</div>
+        <span class="eyebrow">Free self-assessment</span>
+        <h1 class="display">How ready is your ERP for <em>what's next?</em></h1>
+        <p class="lead">Six questions about your systems, close, payroll, reporting, data and support. You'll get an instant score, a breakdown by area and recommendations tailored to your gaps.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container quiz-wrap">
+        <div class="quiz reveal" id="quiz">
+          <div class="quiz-run">
+            <div class="quiz-top"><span id="quiz-count">Question 1 of 6</span><span class="quiz-area" id="quiz-area">Systems</span></div>
+            <div class="quiz-progress" aria-hidden="true"><i id="quiz-bar"></i></div>
+            <div id="quiz-questions"><noscript><p>Please enable JavaScript to take the readiness check, or <a class="link-arrow" href="contact.html">contact us</a> for a guided assessment.</p></noscript></div>
+            <div class="quiz-nav">
+              <button class="btn-text" type="button" id="quiz-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Back</button>
+              <button class="btn btn--primary" type="button" id="quiz-next" disabled>Next <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </div>
+          </div>
+
+          <div class="result" id="quiz-result" hidden aria-live="polite">
+            <div class="result-head">
+              <div class="gauge">
+                <svg viewBox="0 0 220 220" aria-hidden="true">
+                  <defs><linearGradient id="rGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A4C82"/><stop offset="1" stop-color="#13B5B1"/></linearGradient></defs>
+                  <circle class="g-track" cx="110" cy="110" r="90" fill="none" stroke-width="16"/>
+                  <circle class="g-val" id="gauge-val" cx="110" cy="110" r="90" fill="none" stroke="url(#rGrad)" stroke-width="16" stroke-linecap="round" stroke-dasharray="565.49" stroke-dashoffset="565.49"/>
+                </svg>
+                <div class="gauge-num"><div><b id="score-num">0</b><span>out of 100</span></div></div>
+              </div>
+              <div>
+                <span class="result-band" id="result-band">Developing</span>
+                <h2 id="result-title">Solid foundations, clear room to grow.</h2>
+                <p id="result-text"></p>
+              </div>
+            </div>
+            <div class="area-bars" id="area-bars"></div>
+            <h3 class="recs-title">Recommended next steps</h3>
+            <div class="recs" id="recs"></div>
+            <div class="result-actions">
+              <a class="btn btn--primary btn--magnetic" id="result-cta" href="contact.html?topic=readiness">Discuss my results <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <button class="btn btn--ghost" type="button" id="quiz-restart">Retake the check</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-aside">
+          <div><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Two minutes</b>Six multiple-choice questions.</span></div>
+          <div><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Private</b>Answers stay in your browser.</span></div>
+          <div><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Actionable</b>Recommendations mapped to your gaps.</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="index.html" aria-label="CoreTech home"><img class="brand-mark" src="assets/img/logo-mark-192.png" width="44" height="44" alt=""><span class="brand-name">Core<span>Tech</span></span></a>
+          <p>Your partner for ERP strategy, implementation, integration and support — built around a stronger core.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="services.html#strategy">Strategy &amp; Selection</a></li>
+            <li><a href="services.html#implementation">Implementation</a></li>
+            <li><a href="services.html#migration">Data Migration</a></li>
+            <li><a href="services.html#integrations">Integrations</a></li>
+            <li><a href="services.html#support">Managed Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="case-studies.html">Case studies</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="readiness.html">Readiness check</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Get in touch</h3>
+          <ul>
+            <li><a href="mailto:info@coretechconsulting.com">info@coretechconsulting.com</a></li>
+            <li><a href="contact.html">Book a consultation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> CoreTech Consulting. All rights reserved.</span>
+        <nav aria-label="Legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></nav>
+      </div>
+    </div>
+  </footer>
+  <div class="mobile-cta" aria-label="Quick actions">
+    <a class="btn btn--primary" href="contact.html">Book a consultation</a>
+    <a class="btn btn--ghost" href="readiness.html">Readiness check</a>
+  </div>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/readiness.js"></script>
+</body>
+</html>

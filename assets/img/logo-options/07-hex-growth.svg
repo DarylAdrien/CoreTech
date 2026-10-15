@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="CoreTech — Hex Growth">
+  <!-- Faceted hexagonal "C", open on the right -->
+  <polygon points="88.1,28 50,6 50,24 72.5,37" fill="#14B39C"/>
+  <polygon points="50,6 11.9,28 27.5,37 50,24" fill="#11917F"/>
+  <polygon points="11.9,28 11.9,72 27.5,63 27.5,37" fill="#0D5C55"/>
+  <polygon points="11.9,72 50,94 50,76 27.5,63" fill="#0F6E62"/>
+  <!-- Lower arm rises to a point: growth, implied -->
+  <polygon points="50,94 88.1,72 72.5,63 50,76" fill="#12A08C"/>
+  <polygon points="88.1,72 88.1,56 72.5,63" fill="#E8A13A"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="CoreTech — Hex Core">
+  <rect width="48" height="48" rx="12" fill="#0B1626"/>
+  <path d="M37.3 16.3 L24 8.6 L10.7 16.3 L10.7 31.7 L24 39.4 L37.3 31.7" fill="none" stroke="#FFFFFF" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M24 17.5 L29.6 20.75 L29.6 27.25 L24 30.5 L18.4 27.25 L18.4 20.75 Z" fill="#14B39C"/>
+  <circle cx="37.3" cy="24" r="2.6" fill="#E8A13A"/>
+</svg>
